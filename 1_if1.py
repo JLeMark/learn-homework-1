@@ -14,26 +14,27 @@
 
 """
 
-def main():
+def user_age(age):
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
     age = int(input("Укажите свой возраст: "))
-    def user_age(age):
-      if age <= 6:
+
+    if age <= 6:
         return "Добро пожаловать в детский сад"
 
-      if age <= 17:
+    if age <= 17:
         return "Вам пора в школу"
 
-      if age <= 22:
+    if age <= 22:
         return "ВУЗ!!!"
 
-      return ("Пора работать!")
-    print(user_age(age))
+    return ("Пора работать!")
+
+
 
 
 
 if __name__ == "__main__":
-    main()
+   print(user_age('age'))
